@@ -13,7 +13,7 @@ const app = express();
 //     next();
 //   }
 // };
-app.use(express.static(__dirname+'./dist/demo-shop'));
+app.use(express.static(__dirname+'/dist/demo-shop'));
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname,'/dist/demo-shop/index.html'));
